@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Next Feature - Emotion Analyzer</title>
+  <link rel="stylesheet" href="audio_page.css">
+ 
+</head>
+<body>
+  <div class="emoji-layer" id="emojiLayer"></div>
+
+  <div id="contentContainer">
+
+      <div class="nav-bar">
+    <div class="summary-container">
+      <div class="summary-btn">Quick Guide</div>
+      <div class="summary-tooltip">
+        1️⃣ Click the "Upload" button below the display box. <br/>
+        <br/> Step 2-> After entering simply press the submit button. <br/>
+        <br/> Step 3-> Wait for result and there's how it's done :)
+      </div>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <div class="nav-item">MyProfile</div>
+      <div class="nav-item">Feedback</div>
+      <div class="nav-item">Home</div>
+      <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+    </div>
+  </div>
+
+  <div class="side-menu" id="sideMenu">
+    <div class="side-close" onclick="toggleMenu()">✖</div>
+    <ul>
+      <li class="side-option">Terms & Conditions</li>
+      <li class="side-option">FAQs</li>
+      <li class="side-option">Help & Forums</li>
+    </ul>
+  </div>
+
+
+  <div class="page-content">
+    <div class="display-box"></div>
+        <div class="button-group">
+            <div class="upload-only-wrapper">
+            <button class="upload-btn">
+              <img src="https://img.icons8.com/?size=100&id=367&format=png&color=000000" alt="upload" class="icon-img1" />
+              Upload
+            </button>
+        </div>
+    </div>
+  
+  </div>
+
+
+
+<div id="filePopup" class="popup-overlay">
+  <div class="popup-box">
+    <label for="fileInput" id="fileLabel" class="file-label">Choose your media file</label>
+    <input type="file" id="fileInput" style="display: none;" />
+    <div id="fileName" class="file-name-display" style="display: none;"></div>
+    
+    <button id="okButton" class="ok-btn" style="display: none;">OK</button>
+  </div>
+</div>
+
+<!-- Loading Bar Popup -->
+<div id="loadingPopup" class="popup-overlay">
+  <div class="popup-box loading-box">
+    <div class="loading-text">Upload in progress...</div>
+    <div class="loading-bar-bg">
+      <div id="loadingBar" class="loading-bar-fill"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  <script src="audio_page.js"></script>
+</body>
+</html>
