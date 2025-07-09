@@ -63,7 +63,7 @@ okButton.addEventListener('click', () => {
   formData.append('file', file);
 
   // Call API in parallel but display after 5s (loading bar)
-  fetch("https://8af732d22a3c.ngrok-free.app", {
+  fetch("http://127.0.0.1:8000/", {
     method: "POST",
     body: formData
   })
