@@ -393,6 +393,7 @@
 
 .upload-btn {
   min-width: 240px;
+  margin-top: -3px;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 30px;
