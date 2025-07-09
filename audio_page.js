@@ -63,7 +63,7 @@ okButton.addEventListener('click', () => {
   formData.append('file', file);
 
   // Call API in parallel but display after 5s (loading bar)
-  fetch("http://127.0.0.1:8000/", {
+  fetch("http://127.0.0.1:8000/predict_audio_emotion", {
     method: "POST",
     body: formData
   })
