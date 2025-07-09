@@ -63,7 +63,7 @@ okButton.addEventListener('click', () => {
   formData.append('file', file);
 
   // Call API in parallel but display after 5s (loading bar)
-  fetch("https://a4cf-2409-4090-3007-a606-90e5-963d-623a-ab73.ngrok-free.app/predict_audio_emotion", {
+  fetch("https://8af732d22a3c.ngrok-free.app", {
     method: "POST",
     body: formData
   })
